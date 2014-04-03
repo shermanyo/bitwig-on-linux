@@ -1,4 +1,8 @@
-// logsrv.js
+// logsrv.node.js
+//
+// run:
+// $ node logsrv.node.js
+// Listening on 127.0.0.1:58008 ...
 
 var net = require('net');
 var fs = require('fs');
@@ -31,4 +35,5 @@ var server = net.createServer(
 );
 
 // Start server
+console.log("Listening on 127.0.0.1:58008 ...");
 server.listen(58008, '127.0.0.1');
